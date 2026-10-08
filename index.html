@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Driving Authority - Status</title>
+    <style>
+        /* General Reset and Typography */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f8;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Top Header Section */
+        header {
+            background-color: #ffffff;
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        header .logo-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #1a2b5e;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 1.2;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Main Content Area */
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .alert-container {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            width: 100%;
+            max-width: 850px;
+        }
+
+        /* The Alert Box (Previously Red, now Blue) */
+        .alert-box {
+            border: 2px solid #0d47a1; /* Changed frame from Red to Blue */
+            background-color: #e3f2fd; /* Very light blue background */
+            padding: 35px 25px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .alert-box h1 {
+            color: #0d47a1; /* Changed text from Red to Blue */
+            font-size: 26px;
+            margin-bottom: 15px;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        .alert-box p {
+            color: #0d47a1; /* Changed text from Red to Blue */
+            font-size: 16px;
+            line-height: 1.5;
+            font-weight: bold;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #f0f2f5;
+            max-width: 1000px;
+            margin: 0 auto 30px auto;
+            width: calc(100% - 40px);
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .footer-logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .footer-logo-container .logo-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #1a2b5e;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 1.2;
+            text-transform: uppercase;
+            text-align: left;
+        }
+
+        .copyright {
+            color: #555555;
+            font-size: 14px;
+            border-top: 1px solid #dcdcdc;
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+
+        /* SVG Logo Styling */
+        .escudo-svg {
+            width: 60px;
+            height: 60px;
+            fill: #1a2b5e;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .alert-box h1 { font-size: 20px; }
+            .alert-box p { font-size: 14px; }
+            header .logo-text { font-size: 14px; }
+            .footer-logo-container .logo-text { font-size: 16px; }
+            .escudo-svg { width: 45px; height: 45px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Header -->
+    <header>
+        <!-- Named the image ESCUDO as requested -->
+       <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='none' stroke='%231a2b5e' stroke-width='6'/><circle cx='50' cy='50' r='30' fill='none' stroke='%231a2b5e' stroke-width='4'/><path d='M50 20 L50 35 M50 65 L50 80 M20 50 L35 50 M65 50 L80 50 M30 30 L40 40 M60 60 L70 70 M70 30 L60 40 M40 60 L30 70' stroke='%231a2b5e' stroke-width='6' stroke-linecap='round'/></svg>" alt="ESCUDO" class="escudo-svg">
+<div class="logo-text">
+    <span>INTERNATIONAL</span>
+    <span>DRIVING AUTHORITY</span>
+</div>
+    </header>
+
+    <!-- Main Content Box -->
+    <main>
+        <div class="alert-container">
+            <div class="alert-box">
+                <h1>Your International Driving Permit is VALID</h1>
+                <p>Your International Driving Permit is up to date. If want to extend your validity, please place a new order or contact our customer support at hello@internationaldrivingauthority.com</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo-container">
+            <!-- Named the image ESCUDO as requested -->
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='none' stroke='%231a2b5e' stroke-width='6'/><circle cx='50' cy='50' r='30' fill='none' stroke='%231a2b5e' stroke-width='4'/><path d='M50 20 L50 35 M50 65 L50 80 M20 50 L35 50 M65 50 L80 50 M30 30 L40 40 M60 60 L70 70 M70 30 L60 40 M40 60 L30 70' stroke='%231a2b5e' stroke-width='6' stroke-linecap='round'/></svg>" alt="ESCUDO" class="escudo-svg">
+            <div class="logo-text">
+                <span>INTERNATIONAL</span>
+                <span>DRIVING AUTHORITY</span>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2024 International Driving Authority. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
